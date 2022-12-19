@@ -7,9 +7,12 @@ using static System.Console;
 
 WriteLine("Введите число: ");
 int a = int.Parse(ReadLine()!);
-
-while (a % 2 != 1)
+int n = 1;
+while (n <= a)
 {
-    Write($"{a} ");
-    a = a + 1;
+    if (n % 2 != 1)
+    {
+        Write(n + ", ");
+    }
+    n++;
 }
