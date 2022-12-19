@@ -4,3 +4,4 @@
 //44 5 78 -> 78
 //22 3 9 -> 22
 
+using static System.Console;

@@ -4,4 +4,4 @@
 //-3 -> нет
 //7 -> нет
 
-
+using static System.Console;
