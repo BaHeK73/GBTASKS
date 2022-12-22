@@ -15,7 +15,7 @@ int b = int.Parse(ReadLine());
 WriteLine("Введите третье число: ");
 int c = int.Parse(ReadLine());
 
-int max = 0;
+int max = a;
 
 if (a > max) max = a;
 if (b > max) max = b;
