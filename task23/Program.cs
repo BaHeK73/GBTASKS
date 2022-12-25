@@ -8,11 +8,12 @@ Clear();
 WriteLine("Введите число N: ");
 int N = int.Parse(ReadLine()!);
 int i = 1;
+
 int table = N > 0? N : i - N + 1;
 
-string line_1 = "- - -";
-string line_2 = "| N ";
-string line_3 = "| N^3 ";
+string line_1 = "-------";
+string line_2 = "| N   |";
+string line_3 = "| N^3 |";
 
 int x = 1;
 while(x <= table)
@@ -22,12 +23,12 @@ while(x <= table)
     int count_table = i.ToString().Length;
 
     line_1 += new string('-', count_cub);
-    line_2 += $" {N} ";
+    line_2 += $" {i} ";
     line_2 += new string(' ', count_cub - count_table);
     line_2 += "|";
     line_3 += $" {cub} |";
 
-    i++;
+    x++;
     if (N > 0) i++;
     else i--;
 }
