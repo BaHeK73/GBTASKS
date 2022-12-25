@@ -5,3 +5,18 @@
 
 using static System.Console;
 Clear();
+
+WriteLine("Введите число: ");
+int number = Convert.ToInt32(ReadLine());
+int reverse_number = number%10;
+
+//if (number == reverse_number)
+
+WriteLine(reverse_number);
+// {
+//     WriteLine($"КЛАСС! Это число {number} полиндром!");
+// }
+// else
+// {
+//     WriteLine($"Это самое обычное число {number}.");
+// }

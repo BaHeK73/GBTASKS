@@ -4,3 +4,12 @@
 
 using static System.Console;
 Clear();
+
+WriteLine("Введите число N: ");
+int.TryParse(ReadLine(), out int N);
+int i = 1;
+while (i < N+1)
+{
+    Write($"n {i} ");
+    i++;
+}
