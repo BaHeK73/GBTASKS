@@ -7,10 +7,10 @@
 using static System.Console;
 
 WriteLine("Введите первое число: ");
-int a = int.Parse(ReadLine());
+int a = int.Parse(ReadLine()!);
 
 WriteLine("Введите второе число: ");
-int b = int.Parse(ReadLine());
+int b = int.Parse(ReadLine()!);
 
 if (a > b)
 {

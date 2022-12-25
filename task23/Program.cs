@@ -6,10 +6,34 @@ using static System.Console;
 Clear();
 
 WriteLine("Введите число N: ");
-int.TryParse(ReadLine(), out int N);
+int N = int.Parse(ReadLine()!);
 int i = 1;
-while (i < N+1)
+int table = N > 0? N : i - N + 1;
+
+string line_1 = "- - -";
+string line_2 = "| N ";
+string line_3 = "| N^3 ";
+
+int x = 1;
+while(x <= table)
 {
-    Write($"n {i} ");
+    double cub = Math.Pow(i, 3);
+    int count_cub = cub.ToString().Length;
+    int count_table = i.ToString().Length;
+
+    line_1 += new string('-', count_cub);
+    line_2 += $" {N} ";
+    line_2 += new string(' ', count_cub - count_table);
+    line_2 += "|";
+    line_3 += $" {cub} |";
+
     i++;
+    if (N > 0) i++;
+    else i--;
 }
+
+WriteLine(line_1);
+WriteLine(line_2);
+WriteLine(line_1);
+WriteLine(line_3);
+WriteLine(line_1);
