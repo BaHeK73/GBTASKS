@@ -29,22 +29,17 @@ if(number >= 10000)
     else
     WriteLine("Некорректное число!");
 
+// Решение на любое число
 // WriteLine("Введите число: ");
-// string number = ReadLine()!;
-// int len = number.Length;
 
-// if (len == 5)
+
+// long num = long.Parse(ReadLine()!);
+// long revers = 0;
+// long num2 = num;
+// while (num2 != 0)
 // {
-//     if (number[0] == number[4] && number[1] == number[3])
-//     {
-//         WriteLine($"{number} - Палиндром");
-//     }
-//     else
-//     {
-//         WriteLine($"{number} - НЕ палиндром");
-//     }
+//     revers *= 10;
+//     revers += num2 % 10;
+//     num2 = num2 / 10;
 // }
-// else
-// {
-//     WriteLine($"ОШИБКА: {number} - не является пятизначным");
-// }
+// Write(revers == num ? "Полиндром" : "Обычное число");
